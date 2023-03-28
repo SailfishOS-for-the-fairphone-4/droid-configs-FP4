@@ -18,9 +18,9 @@
 # Other screen sizes and ratios will require more trial-and-error.
 %define pixel_ratio 1.75
 
+
+Obsoletes: ofono-configs-binder
 Obsoletes: bluez5-configs-mer
-Obsoletes: ofono-configs-mer
-Obsoletes: audioflingerglue
 
 %include droid-configs-device/droid-configs.inc
 %include patterns/patterns-sailfish-device-adaptation-FP4.inc
