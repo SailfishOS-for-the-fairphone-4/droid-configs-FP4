@@ -35,7 +35,7 @@ fi
 # Copy rootfs & hybris-installer scripts into updater .zip tree
 mkdir updater/
 mv $GEN_IMG_BASE.tar.gz updater/$DST_IMG
-cp -r ../hybris/hybris-installer/hybris-installer/* updater/
+cp -r ../hybris/hybris-installer/hybris-installer-files/* updater/
 
 # Update install script with image details
 LOS_VER="18.1"
