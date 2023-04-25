@@ -75,8 +75,14 @@ Requires: geoclue-provider-hybris
 # 1. binder plugin requires Android 8 or a newer base
 # 2. pn54x plugin talks directly to pn54x driver
 # These plugins are mutually exclusive, you need to pick one:
-#Requires: nfcd-binder-plugin
+Requires: nfcd-binder-plugin
 #Requires: nfcd-pn54x-plugin
+
+
+Requires: yamuisplash
+
+Requires: parse-android-dynparts
+
 
 %description -n patterns-sailfish-device-adaptation-FP4
 Pattern with packages for FP4 HW Adaptation
