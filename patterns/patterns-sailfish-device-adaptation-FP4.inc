@@ -81,7 +81,7 @@ Requires: nfcd-binder-plugin
 
 
 Requires: parse-android-dynparts
-Requires: sailfish-fpd-community
+#Requires: sailfish-fpd-community
 
 %description -n patterns-sailfish-device-adaptation-FP4
 Pattern with packages for FP4 HW Adaptation
