@@ -1,0 +1,1 @@
+KERNEL=="card0", SUBSYSTEM=="sound", ATTR{id}=="litolagoonfp4sn", ENV{PULSE_IGNORE}="1"

@@ -1,0 +1,10 @@
+on late-init
+    chown system input /sys/class/leds/vibrator_aw8695/activate
+    chown system input /sys/class/leds/vibrator_aw8695/duration
+    chown system input /sys/class/leds/vibrator_aw8695/state
+    chmod 0664 /sys/class/leds/vibrator_aw8695/activate
+    chmod 0664 /sys/class/leds/vibrator_aw8695/duration
+    chmod 0664 /sys/class/leds/vibrator_aw8695/state
+
+service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service.FP4_HYBRIS_DISABLED
+    override

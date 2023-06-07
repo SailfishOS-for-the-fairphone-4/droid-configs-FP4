@@ -18,9 +18,25 @@
 # Other screen sizes and ratios will require more trial-and-error.
 %define pixel_ratio 1.75
 
+%define android_version_major 11
 
-Obsoletes: ofono-configs-binder
+# Device-specific ofono configuration
+Provides: ofono-configs
+Requires: ofono-binder-plugin
+
+# No device reset
+Provides: jolla-settings-system-reset
+
+# Device-specific usb-moded configuration
+Provides: usb-moded-configs
+Obsoletes: usb-moded-defaults
+
+Obsoletes: audioflingerglue
 Obsoletes: bluez5-configs-mer
+Requires: libgbinder-tools
+
+%define ofono_enable_plugins bluez5,hfp_ag_bluez5
+%define ofono_disable_plugins bluez4,dun_gw_bluez4,hfp_ag_bluez4,hfp_bluez4,dun_gw_bluez5,hfp_bluez5
 
 %include droid-configs-device/droid-configs.inc
 %include patterns/patterns-sailfish-device-adaptation-FP4.inc

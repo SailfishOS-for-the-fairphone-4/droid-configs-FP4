@@ -1,0 +1,3 @@
+DEVPATH=="/class/leds/vibrator_aw8695", TEST=="/sys/$devpath/activate", RUN+="/bin/chmod 0664 /sys/$devpath/activate", RUN+="/bin/chown system:input /sys/$devpath/activate"
+DEVPATH=="/class/leds/vibrator_aw8695", TEST=="/sys/$devpath/duration", RUN+="/bin/chmod 0664 /sys/$devpath/duration", RUN+="/bin/chown system:input /sys/$devpath/duration"
+
