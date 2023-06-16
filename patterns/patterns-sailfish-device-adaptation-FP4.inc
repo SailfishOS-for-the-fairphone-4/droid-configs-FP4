@@ -79,8 +79,14 @@ Requires: jolla-mediaplayer-radio
 Requires: nfcd-binder-plugin
 #Requires: nfcd-pn54x-plugin
 
+# Super-partition support
 Requires: parse-android-dynparts
+
+# Fingerprint support
 #Requires: sailfish-fpd-community
+
+# Bluetooth support
+Requires: bluebinder
 
 %description -n patterns-sailfish-device-adaptation-FP4
 Pattern with packages for FP4 HW Adaptation
