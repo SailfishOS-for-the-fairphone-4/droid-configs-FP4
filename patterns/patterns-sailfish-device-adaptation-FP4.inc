@@ -59,9 +59,6 @@ Requires: usb-moded
 # hammerhead, grouper, and maguro use this in scripts, so include for all
 Requires: rfkill
 
-# enable device lock and allow to select untrusted software
-Requires: jolla-devicelock-daemon-encsfa
-
 # Enable home encryption
 #Requires: sailfish-device-encryption
 
@@ -79,8 +76,21 @@ Requires: jolla-mediaplayer-radio
 Requires: nfcd-binder-plugin
 #Requires: nfcd-pn54x-plugin
 
+# Super-partition support
 Requires: parse-android-dynparts
-#Requires: sailfish-fpd-community
+
+# Fingerprint support
+Requires: sailfish-fpd-community
+Requires: sailfish-fpd-community-test
+
+# Use screenlock supporting FPD
+Requires: sailfish-devicelock-fpd
+
+# Without FPD: enable device lock and allow to select untrusted software
+#Requires: jolla-devicelock-daemon-encsfa
+
+# Bluetooth support
+Requires: bluebinder
 
 %description -n patterns-sailfish-device-adaptation-FP4
 Pattern with packages for FP4 HW Adaptation
