@@ -14,6 +14,7 @@ Requires: droid-config-FP4-flashing
 Requires: droid-config-FP4-bluez5
 Requires: droid-hal-version-FP4
 Requires: hidl-audio-FP4
+Requires: dummy_netd
 
 # Hybris packages
 Requires: libhybris-libEGL

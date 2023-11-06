@@ -6,6 +6,9 @@ Summary: Jolla Configuration FP4
 Requires: patterns-sailfish-device-configuration-common-FP4
 Requires: patterns-sailfish-device-adaptation-FP4
 
+# Required for 4g to work
+Requires: dummy_netd  
+
 # For devices with cellular modem. Those without one, please comment out:
 Requires: patterns-sailfish-cellular-apps
 
